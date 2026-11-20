@@ -11,25 +11,25 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Get project files
+    - name: Get project files
         uses: actions/checkout@v4
 
-      - name: Set up Java
+    - name: Set up Java
         uses: actions/setup-java@v4
         with:
           distribution: temurin
           java-version: '17'
 
-      - name: Set up Android SDK
+    - name: Set up Android SDK
         uses: android-actions/setup-android@v4
         with:
           accept-android-sdk-licenses: true
           log-accepted-android-sdk-licenses: false
 
-      - with:
+    - with:
       arguments: assembleDebug
 
-      - name: Save APK
+    - name: Save APK
         uses: actions/upload-artifact@v4
         with:
           name: Shawinkum-APK
