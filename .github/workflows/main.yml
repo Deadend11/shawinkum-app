@@ -25,7 +25,6 @@ jobs:
         with:
           accept-android-sdk-licenses: true
           log-accepted-android-sdk-licenses: false
-        with:
           arguments: assembleDebug
 
     - name: Save APK
