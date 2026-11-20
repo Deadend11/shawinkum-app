@@ -26,8 +26,7 @@ jobs:
           accept-android-sdk-licenses: true
           log-accepted-android-sdk-licenses: false
 
-      - uses: gradle/actions/setup-gradle@v4
-      - run: ./gradlew assembleDebug
+      - with: arguments: assembleDebug
 
       - name: Save APK
         uses: actions/upload-artifact@v4
