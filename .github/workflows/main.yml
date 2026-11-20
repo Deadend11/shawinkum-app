@@ -30,6 +30,7 @@ jobs:
         uses: gradle/gradle-build-action@v3
         with:
           gradle-version: '8.9'
+          cache-disabled: true
           arguments: assembleDebug
 
       - name: Save APK
