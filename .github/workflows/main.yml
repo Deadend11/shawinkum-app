@@ -25,9 +25,8 @@ jobs:
         with:
           accept-android-sdk-licenses: true
           log-accepted-android-sdk-licenses: false
-
-    - with:
-      arguments: assembleDebug
+        with:
+          arguments: assembleDebug
 
     - name: Save APK
         uses: actions/upload-artifact@v4
